@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 2rem;
+    /* max-width: 1140px; */
+}
+.box {
+   width: 100%;
+   
+}
+h1,h2,h3,h4 {
+    margin: 3rem 0 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 5.5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+em {
+    font-weight: 400;
+    color: rgb(53, 52, 51);
+}
+h3,h4 {
+   font-size: 3rem;
+}
+li {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    font-weight:350;
+    line-height: 1.5;
+    word-spacing: 4px;
+
+}
+img {
+   width: 100%;
+}
+@media screen and (min-width : 700px ) {
+   
+}
