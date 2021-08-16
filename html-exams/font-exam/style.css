@@ -1,12 +1,11 @@
 html {
   font-size: 62.5%;
 }
-body {
-  max-width: 1140px;
-}
 .box {
   margin: 1rem 7rem 1rem 7rem;
   width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -45,6 +44,4 @@ p {
 }
 img {
   width: 100%;
-}
-@media screen and (min-width: 700px) {
 }

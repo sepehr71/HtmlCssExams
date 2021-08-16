@@ -1,0 +1,9 @@
+.box {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+}
