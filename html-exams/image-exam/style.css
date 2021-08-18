@@ -1,0 +1,64 @@
+/* mobile approach */
+* {
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("images/background_w320.jpg");
+  background-size: cover;
+}
+.item {
+  font-family: "poppins";
+  color: white;
+}
+.item-one {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: 2px 2px black;
+  word-spacing: 10px;
+  text-align: center;
+}
+.item-two {
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  word-spacing: 4px;
+  margin-top: 3rem;
+  background-color: rgba(22, 17, 17, 0.7);
+}
+/* small tablet approach */
+@media screen and (min-width: 760px) {
+  .container {
+    background-image: url("images/background_w853.jpg");
+    background-size: cover;
+  }
+  .item-one {
+    font-size: 1.7rem;
+  }
+  .item-two {
+    font-size: 1.8rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media screen and (min-width: 1228px) {
+  .container {
+    background-image: url("images/background_w1228.jpg");
+    background-size: cover;
+  }
+  .item-one {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    background-image: url("images/background_w1440.jpg");
+    background-size: cover;
+  }
+  .item-one {
+    font-size: 3rem;
+  }
+}
