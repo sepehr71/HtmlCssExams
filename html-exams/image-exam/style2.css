@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  background-color: #2a2138;
+  font-size: 0.85rem;
+  font-weight: 100;
+  padding-left: 0;
+}
+nav ul {
+  padding-left: 0;
+}
+nav li {
+  list-style: none;
+  color: rgb(214, 214, 214);
+}
+
+nav li {
+  padding: 0.8rem 0.6rem;
+}
+li a {
+  margin-left: 0.9rem;
+}
+#icon {
+  margin-left: 0.5rem;
+}
+li:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #221a2e;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    width: 20%;
+    height: 100vh;
+  }
+}
