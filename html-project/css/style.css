@@ -234,8 +234,8 @@ a {
 
 /* Cards */
 
-.card {
-  box-shadow: 0 0 20px 10px #f3f3f3;
+/* .card {
+  box-shadow: 0 0 20px 15px #f3f3f3;
   border-radius: 10px;
   overflow: hidden;
   margin: 2rem;
@@ -261,13 +261,28 @@ a {
 .middle {
   padding: 2rem 3rem;
 }
+.a {
+  display: flex;
+  flex-direction: row;
+}
+.a p {
+  margin-top: 0.4rem;
+  margin-right: 2rem;
+}
+.a .badge {
+  background-color: #04bddd;
+} */
 
 /*Cards mosh*/
 
-/* .card {
+.card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
 }
 .card__header,
 .card__body {
@@ -283,10 +298,10 @@ a {
 }
 .card--secondary .badge--secondary {
   background: #02cdf1;
-} */
+}
 
 /* Plans */
-/* 
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -335,4 +350,4 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
-} */
+}
