@@ -199,6 +199,10 @@ a {
   background: var(--color-heading);
   color: #fff;
 }
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -427,10 +431,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
@@ -467,48 +470,39 @@ a {
 /* Callout */
 
 .callout {
-  background-color: var(--color-primary);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  padding: 4rem;
   border-radius: 5px;
 }
-.callout__section1 {
-  text-align: center;
-  padding: 0.8rem 2rem;
-}
-.callout__title {
+.callout--primary {
+  background-color: var(--color-primary);
   color: white;
 }
-.callout__text {
-  font-size: 1.8rem;
+.callout__content {
+  text-align: center;
 }
-.btn__callout {
-  margin-bottom: 5rem;
+.callout__heading {
+  color: white;
+  margin-top: 0;
+  font-size: 3rem;
 }
-@media screen and (min-width: 768px) {
-  .callout {
-    flex-direction: row;
-  }
-  .callout__title,
-  .callout__text {
-    text-align: start;
-    padding: 0 2.6rem;
-  }
-  .callout__section2 {
-    padding-right: 4rem;
-    justify-content: center;
-  }
-  .btn__callout {
-    margin: 0;
-  }
+.callout .btn {
+  justify-self: center;
+  align-self: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .callout {
-    max-width: 1024px;
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  .grid__callout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .callout--primary .grid--cols-2 {
+    grid-template-columns: 1fr auto;
+  }
   }
 }
