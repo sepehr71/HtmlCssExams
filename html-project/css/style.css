@@ -28,7 +28,10 @@ h1,
 h2,
 h3 {
   color: var(--color-heading);
+<<<<<<< HEAD
   margin-bottom: 1rem;
+=======
+>>>>>>> cdc024b67a9a713a30730346cbb513c7c50c2b09
   line-height: 1.1;
 }
 h1 {
@@ -171,6 +174,12 @@ a {
   margin: 1rem 0;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
 .btn--primary {
   background: var(--color-primary);
   color: white;
@@ -215,7 +224,7 @@ a {
     font-size: 1.5rem;
   }
 }
-/* Inputs */
+/* ps */
 
 .input {
   border-radius: var(--border-radius);
@@ -236,7 +245,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -296,9 +305,9 @@ a {
   overflow: hidden;
   transition: transform 0.2s;
 }
-.card:hover {
-  transform: scale(1.02);
-}
+/* .card:hover {
+  transform: scale(1.05);
+} */
 .card__header,
 .card__body {
   padding: 2rem 3rem;
@@ -314,6 +323,9 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
+.card--primary .badge--primary {
+  background: #126de4;
+}
 
 /* Plans */
 
@@ -323,6 +335,7 @@ a {
   font-weight: 500;
   font-size: 2.4rem;
 }
+
 .plan__price {
   font-size: 6rem;
 }
@@ -352,6 +365,23 @@ a {
   top: -6px;
   right: 5%;
 }
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+.plan,
+.plan--popular,
+.plan--popular:hover {
+  transition: transform 0.3s;
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -430,7 +460,6 @@ a {
 .grid {
   display: grid;
 }
-
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
     grid-template-columns: 1fr 1fr;
@@ -543,7 +572,7 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .block__header {
@@ -639,17 +668,25 @@ a {
     border: none;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cdc024b67a9a713a30730346cbb513c7c50c2b09
 /* Hero */
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> cdc024b67a9a713a30730346cbb513c7c50c2b09
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
 }
+<<<<<<< HEAD
 .hero__image {
   width: 100%;
 }
@@ -666,3 +703,52 @@ a {
     padding-top: 0;
   }
 }
+=======
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 678px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .plan {
+  max-width: 500px;
+  margin: 0 auto;
+}
+>>>>>>> cdc024b67a9a713a30730346cbb513c7c50c2b09
