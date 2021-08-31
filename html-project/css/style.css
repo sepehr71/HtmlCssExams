@@ -766,3 +766,36 @@ a {
     order: 2;
   }
 }
+
+/* control-panel */
+
+.ctrpanel .block__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.showcase__heading {
+  color: white;
+  font-size: 3.4rem;
+}
+.media__title {
+  color: white;
+}
+.ctrpanel .media__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.showcase__image {
+  width: 100%;
+}
+.ctrpanel__content {
+  width: 100%;
+}
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+@media screen and (min-width: 768px) {
+  .showcase__image {
+    max-width: 700px;
+  }
+}
